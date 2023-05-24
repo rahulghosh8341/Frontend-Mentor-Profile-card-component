@@ -1,0 +1,112 @@
+:root {
+  --color-darkcyan: hsl(185, 75%, 39%);
+  --color-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --color-dark-grayish-blue: hsl(227, 10%, 46%);
+  --color-dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 40vw bottom 46vh, left 40vw top 43vh;
+  background-color: var(--color-darkcyan);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  width: 32.5rem;
+  height: 37.5rem;
+  border-radius: 15px;
+}
+.card__avatar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.card__avatar img {
+  position: absolute;
+  top: -5rem;
+  border-radius: 50%;
+  border: #fff 5px solid;
+}
+
+.card__header {
+  background-image: url(images/bg-pattern-card.svg);
+  background-size: cover;
+  width: 32.5rem;
+  height: 14rem;
+  border-radius: 15px 15px 0 0;
+}
+
+.card__body {
+  text-align: center;
+  margin-top: 6.7rem;
+}
+
+.user-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__body h1 {
+  color: var(--color-dark-desaturated-blue);
+  padding-right: 1rem;
+  margin: 0;
+}
+
+.card__body span {
+  font-size: 1.8rem;
+  color: var(--color-dark-grayish-blue);
+}
+
+.card__body p {
+  font-size: 1.4rem;
+  color: var(--color-dark-grayish-blue);
+  margin-top: 1rem;
+  margin-bottom: 2.3rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--color-dark-grayish-blue);
+  opacity: 0.2; /* Adjust the opacity value to decrease intensity */
+}
+
+.card__footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 4rem;
+  justify-content: center;
+  align-content: center;
+  height: 8rem;
+}
+
+.card__item {
+  text-align: center;
+}
+
+.card__item  h2 {
+  font-size: 1.7rem;
+  padding-top: 1.5rem;
+  margin: 0;
+  color: var(--color-dark-desaturated-blue);
+}
+
+.card__item p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin:0.5rem 0 1rem;
+    color: var(--color-dark-grayish-blue);
+}
