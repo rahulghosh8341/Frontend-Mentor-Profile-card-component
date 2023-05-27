@@ -110,3 +110,20 @@ hr {
     margin:0.5rem 0 1rem;
     color: var(--color-dark-grayish-blue);
 }
+
+@media screen and (width>768px) {
+
+  
+body {
+  background-position: right 50.5vw bottom 41vh, left 49.4vw top 50vh;
+}
+
+  .wrapper{
+    width: 34.9rem;
+  }
+
+  .card__header {
+  width: 34.9rem;
+}
+  
+}
